@@ -1,0 +1,524 @@
+        Preparing the environment for use of requested stage ( Devel-2019a ).
+     
+        Preparing the environment for use of requested stage ( 2019a ).
+     
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) CUDA/10.1.105     3) GCCcore/.8.3.0         5) binutils/.2.32
+  2) GCC/8.3.0         4) MVAPICH2/2.3.2-GDR     6) nvidia/.418.87.00
+
+The following have been reloaded with a version change:
+  1) Stages/Devel-2019a => Stages/2019a
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "h5py/2.9.0-Python-3.6.8"
+   Try: "module spider h5py/2.9.0-Python-3.6.8" to see how to load the
+module(s).
+
+
+
+[jrc0470:mpi_rank_0][MPIDI_CH3_Init] 
+
+Please set LD_PRELOAD to the full path of libmpi.so of your MVAPICH2-GDR installation to avoid unexpected errors for GPU-based transfers
+
+E.g. LD_PRELOAD=<PATH_TO_MVAPICH2_GDR_INSTALL>/lib64/libmpi.so
+
+WARNING: Error in initializing MVAPICH2 ptmalloc library.Continuing without InfiniBand registration cache support.
+2019-10-31 15:15:58.377456: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494375000 Hz
+2019-10-31 15:15:58.376605: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494260000 Hz
+2019-10-31 15:15:58.377554: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494155000 Hz
+2019-10-31 15:15:58.377555: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494155000 Hz
+2019-10-31 15:15:58.377556: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494155000 Hz
+2019-10-31 15:15:58.377628: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494155000 Hz
+2019-10-31 15:15:58.376608: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494260000 Hz
+2019-10-31 15:15:58.376640: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494260000 Hz
+2019-10-31 15:15:58.380018: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x358fd00 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.380055: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.376639: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494260000 Hz
+2019-10-31 15:15:58.380020: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4d0a6e0 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.380059: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.378896: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x42fdd70 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.378934: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.380105: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x388e930 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.380129: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.378923: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3915360 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.378949: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.379121: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4a8e270 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.379147: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.379213: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3a7c760 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.379238: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.380287: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x44961b0 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.380312: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.377451: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494375000 Hz
+2019-10-31 15:15:58.377455: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494375000 Hz
+2019-10-31 15:15:58.377448: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2494375000 Hz
+2019-10-31 15:15:58.380357: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4591b70 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.380361: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x52fe7c0 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.380370: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3df05d0 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.380375: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4df4360 executing computations on platform Host. Devices:
+2019-10-31 15:15:58.380406: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.380405: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.380405: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:58.380404: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): <undefined>, <undefined>
+2019-10-31 15:15:59.538293: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4d65430 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.538324: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.538336: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.538342: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.538348: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.540220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:86:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.540256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 2
+2019-10-31 15:15:59.546385: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x39700b0 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.546420: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.546428: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.546434: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.546440: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.546854: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3ad74b0 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.546880: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.546887: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.546893: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.546899: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.547690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:07:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.547729: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 1
+2019-10-31 15:15:59.547931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:06:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.547955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-31 15:15:59.550767: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x38e9680 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.550815: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.550822: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.550828: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.550834: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.550282: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4358ac0 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.550305: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.550313: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.550319: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.550325: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.550970: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:87:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.550992: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 3
+2019-10-31 15:15:59.552520: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:06:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.552544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-31 15:15:59.553082: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x44f0f00 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.553105: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.553113: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.553119: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.553125: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.552288: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4ae8fc0 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.552313: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.552320: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.552326: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.552332: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.553268: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x35eaa50 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.553293: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.553301: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.553306: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.553312: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.553588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:87:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.553609: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 3
+2019-10-31 15:15:59.552817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:86:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.552845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 2
+2019-10-31 15:15:59.553891: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:07:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.553921: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 1
+2019-10-31 15:15:59.587273: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x4e4f0b0 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.587304: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.587325: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.587331: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.587350: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.589322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:07:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.589385: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 1
+2019-10-31 15:15:59.589544: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x5359510 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.589577: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.589585: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.589591: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.589596: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.590773: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x45ec8c0 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.590798: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.590805: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.590811: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.590817: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.590882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:06:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.590909: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 0
+2019-10-31 15:15:59.591541: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:86:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.591577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 2
+2019-10-31 15:15:59.591630: I tensorflow/compiler/xla/service/service.cc:150] XLA service 0x3e4b320 executing computations on platform CUDA. Devices:
+2019-10-31 15:15:59.591660: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (0): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.591668: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (1): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.591674: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (2): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.591679: I tensorflow/compiler/xla/service/service.cc:158]   StreamExecutor device (3): Tesla K80, Compute Capability 3.7
+2019-10-31 15:15:59.592205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1433] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:87:00.0
+totalMemory: 11.17GiB freeMemory: 10.94GiB
+2019-10-31 15:15:59.592229: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1512] Adding visible gpu devices: 3
+2019-10-31 15:16:03.797136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.797183: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      1 
+2019-10-31 15:16:03.797192: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 1:   N 
+2019-10-31 15:16:03.797561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 1, name: Tesla K80, pci bus id: 0000:07:00.0, compute capability: 3.7)
+2019-10-31 15:16:03.810546: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.810590: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      3 
+2019-10-31 15:16:03.810598: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 3:   N 
+2019-10-31 15:16:03.810984: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 3, name: Tesla K80, pci bus id: 0000:87:00.0, compute capability: 3.7)
+2019-10-31 15:16:03.819933: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2019-10-31 15:16:03.827659: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2019-10-31 15:16:03.838518: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.838554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-31 15:16:03.838562: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-31 15:16:03.838816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:06:00.0, compute capability: 3.7)
+2019-10-31 15:16:03.844599: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-10-31 15:16:03.856490: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.856526: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      2 
+2019-10-31 15:16:03.856534: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 2:   N 
+2019-10-31 15:16:03.856818: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 2, name: Tesla K80, pci bus id: 0000:86:00.0, compute capability: 3.7)
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-10-31 15:16:03.864585: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-10-31 15:16:03.922073: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.922124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      1 
+2019-10-31 15:16:03.922132: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 1:   N 
+2019-10-31 15:16:03.922493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 1, name: Tesla K80, pci bus id: 0000:07:00.0, compute capability: 3.7)
+2019-10-31 15:16:03.930700: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2019-10-31 15:16:03.945757: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.945798: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      3 
+2019-10-31 15:16:03.945806: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 3:   N 
+2019-10-31 15:16:03.946012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 3, name: Tesla K80, pci bus id: 0000:87:00.0, compute capability: 3.7)
+2019-10-31 15:16:03.947359: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.947402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-31 15:16:03.947410: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-31 15:16:03.947651: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:06:00.0, compute capability: 3.7)
+2019-10-31 15:16:03.950858: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-10-31 15:16:03.959104: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.959136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      3 
+2019-10-31 15:16:03.959143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 3:   N 
+2019-10-31 15:16:03.959355: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 3, name: Tesla K80, pci bus id: 0000:87:00.0, compute capability: 3.7)
+2019-10-31 15:16:03.962946: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2019-10-31 15:16:03.970799: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2019-10-31 15:16:03.975430: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.975474: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      2 
+2019-10-31 15:16:03.975482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 2:   N 
+2019-10-31 15:16:03.975676: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 2, name: Tesla K80, pci bus id: 0000:86:00.0, compute capability: 3.7)
+2019-10-31 15:16:03.977149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.977179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      2 
+2019-10-31 15:16:03.977198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 2:   N 
+2019-10-31 15:16:03.977442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 2, name: Tesla K80, pci bus id: 0000:86:00.0, compute capability: 3.7)
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-10-31 15:16:03.985798: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2019-10-31 15:16:03.985802: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-10-31 15:16:03.996588: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.996612: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      0 
+2019-10-31 15:16:03.996619: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 0:   N 
+2019-10-31 15:16:03.996797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:06:00.0, compute capability: 3.7)
+2019-10-31 15:16:03.997484: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-10-31 15:16:03.997506: I tensorflow/core/common_runtime/gpu/gpu_device.cc:990]      1 
+2019-10-31 15:16:03.997513: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1003] 1:   N 
+2019-10-31 15:16:03.997665: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10591 MB memory) -> physical GPU (device: 1, name: Tesla K80, pci bus id: 0000:07:00.0, compute capability: 3.7)
+2019-10-31 15:16:04.000811: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+2019-10-31 15:16:04.013811: I tensorflow/core/common_runtime/process_util.cc:71] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+Using TensorFlow backend.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/framework/op_def_library.py:263: colocate_with (from tensorflow.python.framework.ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Colocations handled automatically by placer.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/TensorFlow/1.13.1-GCCcore-8.3.0-GPU-Python-3.6.8/lib/python3.6/site-packages/tensorflow/python/ops/math_ops.py:3066: to_int32 (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.cast instead.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+WARNING:tensorflow:From /usr/local/software/jureca/Stages/2019a/software/Horovod/0.16.2-gmvapich2c-2019a-GDR-GPU-Python-3.6.8/lib/python3.6/site-packages/horovod-0.16.2-py3.6-linux-x86_64.egg/horovod/tensorflow/__init__.py:81: div (from tensorflow.python.ops.math_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Deprecated in favor of operator or tf.math.divide.
+2019-10-31 15:16:19.808935: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.829197: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.833333: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.853966: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.856441: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.866366: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.882604: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.891714: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.957619: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.972243: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.976831: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.983434: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.989634: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:19.992158: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.003046: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.007610: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.014125: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.016973: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.032812: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.050525: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.051257: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.067212: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.076078: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:20.076589: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:22.951191: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:22.975074: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:22.996631: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:22.999382: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:23.021189: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:23.076839: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:23.099911: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:23.125274: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:23.147561: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:23.246113: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:23.287355: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:23.375279: I tensorflow/stream_executor/dso_loader.cc:152] successfully opened CUDA library libcublas.so.10 locally
+2019-10-31 15:16:36.387367: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.32GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:36.853343: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.52GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:36.931263: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.44GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.061667: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.50GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.137869: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.46GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.360400: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.25GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.608818: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.32GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.646437: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.32GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.688402: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.32GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.695577: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.25GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.712557: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.25GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.892763: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.17GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.922554: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.17GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.975754: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.32GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:37.993308: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.32GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.023261: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.17GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.067326: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.52GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.098372: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.52GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.142717: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.44GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.146354: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.52GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.168136: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.32GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.171364: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.44GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.216188: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.17GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.217650: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.32GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.221918: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.44GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.265806: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.50GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.291780: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.50GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.336952: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.46GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.344480: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.50GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.361589: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.46GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.385649: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.52GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.415842: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.46GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.444293: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.52GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.459528: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.44GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.502594: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.52GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.516444: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.44GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.581280: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.50GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.582489: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.44GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.581688: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.52GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.632925: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.50GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.652565: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.46GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.653436: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.44GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.679144: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.52GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.699957: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.46GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.711220: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.50GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.758719: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.44GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.770812: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.50GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.786897: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.46GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.838474: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.46GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.890454: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.50GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:38.968099: W tensorflow/core/common_runtime/bfc_allocator.cc:211] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.46GiB. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2019-10-31 15:16:51.391287: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.394244: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.397717: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.401360: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.400615: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.402878: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.402092: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.403196: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.402972: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.403921: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.404269: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.404912: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.405794: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.404930: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.406058: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.405775: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.406876: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.407082: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.407832: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.410021: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.411052: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.413933: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.432549: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 0, topological sort failed with message: The graph couldn't be sorted in topological order.
+2019-10-31 15:16:51.435466: E tensorflow/core/grappler/optimizers/dependency_optimizer.cc:704] Iteration = 1, topological sort failed with message: The graph couldn't be sorted in topological order.
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+Traceback (most recent call last):
+  File "kitti_train_horovod.py", line 115, in <module>
+    with open(json_file, "w") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './model_data_keras2/prednet_kitti_model.json'
+srun: error: jrc0471: tasks 4-7: Exited with exit code 1
+srun: error: jrc0472: tasks 8-11: Exited with exit code 1
+srun: error: jrc0470: tasks 0-3: Exited with exit code 1
