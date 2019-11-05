@@ -5,8 +5,8 @@ import os
 
 Pleas fill the following parameters list for PyStager
 Source_Directory =  /p/fastdata/slmet/slmet111/met_data/ecmwf/era5/nc/2017/
-Destination_Directory = /p/scratch/cjjsc42/bing/PredNet/extractedData_test1
-Log_Directory = /p/project/cjjsc42/bing/pystager-development/DataExtraction/test1/log
+Destination_Directory = /p/scratch/cjjsc42/bing/PredNet/extractedData/
+Log_Directory = /p/project/cjjsc42/bing/pystager-development/DataExtraction/log
 Rsync_Status = 1
 Checksum_Status = 0
 
