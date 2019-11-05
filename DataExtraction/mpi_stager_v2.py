@@ -6,7 +6,6 @@ import logging
 import time
 from external_function import directory_scanner
 from external_function import load_distributor
-from external_function import grib_2_netcdf
 from external_function import hash_directory
 from external_function import md5
 from prepare_era5_data import *
@@ -18,7 +17,8 @@ from pathlib import Path
 
 
 # for the local machine test
-current_path = "/p/project/cjjsc42/bing/pystager-development"
+#current_path = "/p/project/cjjsc42/bing/pystager-development"
+current_path = os.getcwd()
 # TODO : it will be integerated in the seperated read_in_file 
 #rot_grid="/mnt/rasdaman/DeepRain/gridneu.dat"
 os.chdir(current_path)
@@ -66,6 +66,9 @@ destination_dir = str(params["Destination_Directory"])
 log_dir = str(params["Log_Directory"])
 rsync_status = int(params["Rsync_Status"])
 checksum_status = int(params["Checksum_Status"])
+if not os.path.exists(destination_dir):os.makedirs(destination_dir)
+
+
 
 # check the existence of teh folders :
 
@@ -169,7 +172,7 @@ else:  # node is slave
                 # prepare the rsync commoand to be excexuted by the worker node 
                 rsync_str = ("rsync -r " + source_dir + job + "/" + " " + destination_dir + "/" + job)
                 #os.system(rsync_str)
-
+               
                 process_era5_in_dir(job, src_dir=source_dir, target_dir=destination_dir)
 
                 if checksum_status == 1:
