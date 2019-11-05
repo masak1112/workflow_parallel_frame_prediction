@@ -4,9 +4,9 @@ import os
 # 0:deactivate 1: active
 
 Pleas fill the following parameters list for PyStager
-Source_Directory = /p/scratch/cjjsc42/bing/pystager-development/tryData/
-Destination_Directory = /p/scratch/cjjsc42/bing/pystager-development/processData/
-Log_Directory = /p/project/cjjsc42/bing/pystager-development/log
+Source_Directory = /p/scratch/cjjsc42/bing/PredNet/extractedData/
+Destination_Directory = /p/scratch/cjjsc42/bing/PredNet/processData_test1/
+Log_Directory = /p/project/cjjsc42/bing/pystager-development/DataPreprocess/test1/log
 Rsync_Status = 1
 Checksum_Status = 0
 

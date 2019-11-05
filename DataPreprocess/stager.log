@@ -1,0 +1,35 @@
+2019-11-05 14:36:02,801:DEBUG: === PyStager is started === 
+2019-11-05 14:36:02,865:CRITICAL:The source does not exist
+2019-11-05 14:36:02,866:INFO:exit status : 1
+2019-11-05 14:39:41,692:DEBUG: === PyStager is started === 
+2019-11-05 14:40:48,744:DEBUG: === PyStager is started === 
+2019-11-05 14:56:23,190:DEBUG: === PyStager is started === 
+2019-11-05 14:56:23,872:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,872:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,872:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,873:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,873:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,874:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,874:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,874:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,875:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,875:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,875:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:23,876:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 14:56:33,492:DEBUG:10.302014827728271
+2019-11-05 14:56:33,492:INFO:== PyStager is done ==
+2019-11-05 14:56:33,492:INFO:exit status : 0
+2019-11-05 15:00:29,949:DEBUG: === PyStager is started === 
+2019-11-05 15:23:00,805:DEBUG: === PyStager is started === 
+2019-11-05 15:29:42,840:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:32:15,158:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:34:56,432:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:37:38,185:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:39:05,203:DEBUG: === PyStager is started === 
+2019-11-05 15:41:38,989:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:43:59,695:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:46:39,624:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:46:39,626:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:49:31,674:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:52:12,457:INFO:('Node:', '1', 'finished :', '', '\r\n')
+2019-11-05 15:55:14,099:INFO:('Node:', '1', 'finished :', '', '\r\n')

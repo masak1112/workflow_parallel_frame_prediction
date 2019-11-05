@@ -6,7 +6,6 @@ import logging
 import time
 from external_function import directory_scanner
 from external_function import load_distributor
-from external_function import grib_2_netcdf
 from external_function import hash_directory
 from external_function import md5
 from process_netCDF_v2 import *
@@ -17,7 +16,7 @@ from pathlib import Path
 
 
 # for the local machine test
-current_path = "/p/project/cjjsc42/bing/pystager-development"
+current_path = os.getcwd()
 # TODO : it will be integerated in the seperated read_in_file 
 #rot_grid="/mnt/rasdaman/DeepRain/gridneu.dat"
 os.chdir(current_path)
@@ -62,7 +61,7 @@ destination_dir = str(params["Destination_Directory"])
 log_dir = str(params["Log_Directory"])
 rsync_status = int(params["Rsync_Status"])
 checksum_status = int(params["Checksum_Status"])
-
+if not os.path.exists(destination_dir):os.makedirs(destination_dir)
 # check the existence of teh folders :
 
 if not os.path.exists(source_dir):  # check if the source dir. is existing
