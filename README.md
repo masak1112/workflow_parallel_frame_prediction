@@ -2,7 +2,7 @@
 
 
 
-## Workflow for parallization deep learning 
+## Workflow for parallel deep learning 
 
 This project implements a workflow for parallel deep learning to predict the 2m temperature based on Severin's master thesis [code link](https://github.com/severin1992/airtemprednet) [thesis link](https://b2drop.eudat.eu/s/RmTd8K3pLsDMFw6) . 
 
