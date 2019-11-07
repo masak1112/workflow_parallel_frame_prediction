@@ -13,12 +13,28 @@ The workflow consists of a sqeuence of steps (Data Extraction, Data Preprocessin
 The wokflow have been tested on the supercomputers from JSC, [JURECA](https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JURECA/JURECA_node.html) and [JUWELS](https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JUWELS/JUWELS_node.html)
 
 
+## Requirement:
+* Keras
+* Horovod
+* Python3.6
+* mpi4py
+
+
+
 ## Usage
 
 1. Clone or download this repository,
-2. Install the required modules/packages.
-3. Configure your input directory and output directory for each step.
-3. Run .sh file for each step
+2. Install the required modules/packages on JURECA/JUWELS.
+
+```shell
+source packageInstallation.sh
+```
+
+
+4. Configure your input directory and output directory in .dat file for each step.
+
+
+5. Run .sh file for submitting job
 
 
 ## Workflow example
