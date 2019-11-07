@@ -2,10 +2,10 @@
 from setuptools import setup
 
 setup(
-    name='PyStager',
-    author="Amirpasha Mozaffari",
-    description="This is the parallel data stager",
+    name='Parallel_Workflow_PredNet',
+    author="Bing,Gong; Amirpasha Mozaffari, Severin Hussman",
+    description="This is the parallel workflow for PredNet",
     copyright= "Copyright 2019, The ESDE project",
     version='1.0.0',
-    author_email="a.mozaffari@fz-juelich.de",
+    author_email="b.gong@fz-juelich.de",
 )

@@ -31,10 +31,10 @@ source packageInstallation.sh
 ```
 
 
-4. Configure your input directory and output directory in .dat file for each step.
+3. Configure your input directory, output and log directory in .dat file for each step.
 
 
-5. Run .sh file for submitting job
+4. Run .sh file for submitting job
 
 
 ## Workflow example
