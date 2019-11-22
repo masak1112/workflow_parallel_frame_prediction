@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --account=jjsc42 
+#SBATCH --account=deepacf 
 # budget account where contingent is taken from# TASKS = NODES * GPUS_PER_NODE
 #SBATCH --nodes=3
 #SBATCH --ntasks-per-node=4
