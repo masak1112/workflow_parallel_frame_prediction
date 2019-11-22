@@ -42,7 +42,7 @@ val_file = os.path.join(DATA_DIR, 'X_val.hkl')
 val_sources = os.path.join(DATA_DIR, 'sources_val.hkl')
 
 # Training parameters
-nb_epoch = 50 #original: 150; for all tests so far set to 100; t2onlyMax: 150
+nb_epoch = 10 #original: 150; for all tests so far set to 100; t2onlyMax: 150
 batch_size = 15
 samples_per_epoch = 500 #original: 500; for all tests so far set to 300; t2onlyMax: 500
 N_seq_val = 80  # number of sequences to use for validation ##original: 100; for all tests so far set to 65; t2onlyMax: 80
@@ -88,9 +88,10 @@ callbacks = [hvd.callbacks.BroadcastGlobalVariablesCallback(0),
          hvd.callbacks.LearningRateWarmupCallback(warmup_epochs=5,verbose=1)
          ]
 #bing: original save_model is True
-if hvd.rank == 0:
+if hvd.rank() == 0:
     if save_model:
-        callbacks.append(ModelCheckpoint(filepath=weights_file, monitor='val_lolss', save_best_only=False))
+        print("===========The model will be saved =======")
+        callbacks.append(ModelCheckpoint(filepath=weights_file, monitor='val_loss', save_best_only=True))
 
 #the start training time
 a = datetime.datetime.now()

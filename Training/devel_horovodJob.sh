@@ -1,9 +1,9 @@
 #!/bin/bash
-#SBATCH --account=jjsc42 
+#SBATCH --account=deepacf
 # budget account where contingent is taken from# TASKS = NODES * GPUS_PER_NODE
-#SBATCH --nodes=3
-#SBATCH --ntasks-per-node=4
-#SBATCH --ntasks=12
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=2
+#SBATCH --ntasks=2
 # can be omitted if --nodes and --ntasks-per-node
 # are given
 # SBATCH --cpus-per-task=1
@@ -15,9 +15,9 @@
 #SBATCH --error=horovod-%j.err
 # if keyword omitted: Default is slurm-%j.out in
 # the submission directory.
-#SBATCH --time=20:00:00
-#SBATCH --gres=gpu:4
-#SBATCH --partition=gpus
+#SBATCH --time=00:20:00
+#SBATCH --gres=gpu:2
+#SBATCH --partition=develgpus
 #SBATCH --mail-user=b.gong@fz-juelich.de
 #SBATCH --mail-type=ALL
 
@@ -30,7 +30,6 @@ module load MVAPICH2/2.3.2-GDR
 module load Stages/2019a
 module load Horovod/0.16.2-GPU-Python-3.6.8
 module load Keras/2.2.4-GPU-Python-3.6.8
-
 #module load ParaStationMPI/5.2.2-1
 #module load h5py/2.9.0-Python-3.6.8
 # *** start of job script ***:
