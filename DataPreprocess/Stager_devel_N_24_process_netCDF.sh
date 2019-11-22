@@ -1,8 +1,8 @@
 #!/bin/bash -x
 #SBATCH --account=deepacf
 #SBATCH --nodes=1
-#SBATCH --ntasks=2
-##SBATCH --ntasks-per-node=2
+#SBATCH --ntasks=12
+##SBATCH --ntasks-per-node=12
 #SBATCH --cpus-per-task=1
 #SBATCH --output=process_netcdf-out.%j
 #SBATCH --error=process_netcdf-err.%j
@@ -10,7 +10,8 @@
 #SBATCH --partition=batch
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=b.gong@fz-juelich.de
-##jutil env activate -p deepacf
+
+jutil env activate -p deepacf
 
 module --force purge 
 module /usr/local/software/jureca/OtherStages
