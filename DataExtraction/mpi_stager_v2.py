@@ -15,14 +15,9 @@ import os
 from pathlib import Path
 
 
-
 # for the local machine test
-#current_path = "/p/project/cjjsc42/bing/pystager-development"
-current_path = os.getcwd()
-# TODO : it will be integerated in the seperated read_in_file 
-#rot_grid="/mnt/rasdaman/DeepRain/gridneu.dat"
+current_path = os.path.dirname(os.path.abspath(__file__))
 os.chdir(current_path)
-
 time.sleep(0)
 
 # ini. MPI
@@ -66,9 +61,7 @@ destination_dir = str(params["Destination_Directory"])
 log_dir = str(params["Log_Directory"])
 rsync_status = int(params["Rsync_Status"])
 checksum_status = int(params["Checksum_Status"])
-if not os.path.exists(destination_dir):os.makedirs(destination_dir)
-
-
+load_level = int(params["Load_Level"])
 
 # check the existence of teh folders :
 
@@ -92,46 +85,53 @@ if my_rank == 0:  # node is master
 
     # ==================================== Master : Directory scanner ================================= #
 
-    print(" # ==============  Directory scanner : start    ==================# ")
+    logging.info("==== Directory scanner : start ====")
+    ret_dir_scanner = directory_scanner(source_dir, load_level)
+    # print(ret_dir_scanner)
 
-    ret_dir_scanner = directory_scanner(source_dir)
-    print(ret_dir_scanner)
+    # Unifying the naming of this section for both cases : Sub - Directory or File
+    # dir_detail_list == > Including the name of the directories, size and number of teh files in each directory / for files is empty
+    # list_items_to_process    === > List of items to process  (Sub-Directories / Files)
+    # total_size_source  === > Total size of the items to process
+    # total_num_files    === > for Sub - Directories : sum of all files in different directories / for Files is sum of all
+    # total_num_directories  === > for Files = 0
 
     dir_detail_list = ret_dir_scanner[0]
-    sub_dir_list = ret_dir_scanner[1]
+    list_items_to_process = ret_dir_scanner[1]
     total_size_source = ret_dir_scanner[2]
     total_num_files = ret_dir_scanner[3]
     total_num_dir = ret_dir_scanner[4]
+    logging.info("==== Directory scanner : end ====")
 
     # ===================================  Master : Load Distribution   ========================== #
 
-    print(" # ==============  Load Distrbution  : start  ==================# ")
+    logging.info("==== Load Distribution  : start  ====")
     #def load_distributor(dir_detail_list, sub_dir_list, total_size_source, total_num_files, total_num_directories, p):
-    ret_load_balancer = load_distributor(dir_detail_list, sub_dir_list, total_size_source, total_num_files, total_num_dir, p)
+    ret_load_balancer = load_distributor(dir_detail_list, list_items_to_process, total_size_source, total_num_files, total_num_dir,load_level, p)
     transfer_dict = ret_load_balancer
-
-
-    print(ret_load_balancer)
+    logging.info(ret_load_balancer)
+    logging.info("==== Load Distribution  : end  ====")
 
     # ===================================== Master : Send / Receive =============================== #
-    print(" # ==============  Communication  : start  ==================# ")
+
+    logging.info("==== Master Communication  : start  ====")
 
     # Send : the list of the directories to the nodes
     for nodes in range(1, p):
         broadcast_list = transfer_dict[nodes]
-        comm.send(broadcast_list, dest=nodes)
-    
+        comm.send(broadcast_list, dest = nodes)
+
     # Receive : will wait for a certain time to see if it will receive any critical error from the slaves nodes
-    idle_counter = p - len(sub_dir_list)
+    idle_counter = p - len(list_items_to_process)
     while idle_counter > 1:  # non-blocking receive function
         message_in = comm.recv()
         logging.warning(message_in)
-        #print('Warning:', message_in)
+        # print('Warning:', message_in)
         idle_counter = idle_counter - 1
     
     # Receive : Message from slave nodes confirming the sync
     message_counter = 1
-    while message_counter <= len(sub_dir_list):  # non-blocking receive function
+    while message_counter <= len(list_items_to_process):  # non-blocking receive function
         message_in = comm.recv()
         logging.info(message_in)
         message_counter = message_counter + 1
@@ -139,10 +139,9 @@ if my_rank == 0:  # node is master
     # stamp the end of the runtime
     end = time.time()
     logging.debug(end - start)
-    logging.info('== PyStager is done ==')
+    logging.info('==== PyStager is done ====')
     logging.info('exit status : 0')
-    print('PyStager is finished ')
-  
+    print('=== PyStager is finished ===')
 
     sys.exit(0)
 
@@ -154,6 +153,7 @@ else:  # node is slave
     if message_in is None:  # in case more than number of the dir. processor is assigned todo Tag it!
         message_out = ('Node', str(my_rank), 'is idle')
         comm.send(message_out, dest=0)
+
 
     else: # if the Slave node has joblist to do
         job_list = message_in.split(';')
@@ -170,10 +170,10 @@ else:  # node is slave
 
             if rsync_status == 1:
                 # prepare the rsync commoand to be excexuted by the worker node 
-                rsync_str = ("rsync -r " + source_dir + job + "/" + " " + destination_dir + "/" + job)
+                #rsync_str = ("rsync -r " + source_dir + job + "/" + " " + destination_dir + "/" + job)
                 #os.system(rsync_str)
-               
-                process_era5_in_dir(job, src_dir=source_dir, target_dir=destination_dir)
+                #process_era5_in_dir(job, src_dir=source_dir, target_dir=destination_dir, Load_Level=load_level)
+                prepare_era5_data_one_file(job, source_dir, destination_dir, target=job)
 
                 if checksum_status == 1:
                     hash_directory(destination_dir,job,current_path,"destination")

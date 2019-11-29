@@ -4,7 +4,6 @@ from datetime import datetime
 from netCDF4 import Dataset, date2num
 from shiftgrid import shiftgrid
 import os
-
 AUTHOR = 'Severin Hussmann (s.hussmann@fz-juelich.de)'
 # specify source and target directories
 
@@ -14,7 +13,7 @@ def source_file_name(year, month, day, hour):
     return src_file
 
 
-def prepare_era5_data_one_file(src_file,directory_to_process,target_dir, target="test.nc"):
+def prepare_era5_data_one_file(src_file,directory_to_process, target_dir, target="test.nc"):
     try:
         out_file = target
         print(src_file, ' --> ', os.path.join(target_dir,out_file))
@@ -136,11 +135,12 @@ def extract_time_from_file_name(src_file):
     return year, month, day, hour
 
 def process_era5_in_dir(job_name,src_dir,target_dir):
-    print ("job_name",job_name)
+    print("job_name", job_name)
     directory_to_process = os.path.join(src_dir, job_name)
     print("Going to process file in directory {}".format(directory_to_process))
     files = os.listdir(directory_to_process)
     os.chdir(directory_to_process)
+
     #create a subdirectory based on months
     target_dir2 = os.path.join(target_dir,job_name)
     print("The processed files are going to be saved to directory {}".format(target_dir2))
@@ -151,4 +151,4 @@ def process_era5_in_dir(job_name,src_dir,target_dir):
                 print(src_file," file has been processed in directory ", target_dir2)
             else:
                 print ("==========Processing file {} =============== ".format(src_file))
-                prepare_era5_data_one_file(src_file=src_file,directory_to_process=directory_to_process, target=src_file, target_dir=target_dir2)
+                prepare_era5_data_one_file(src_file=src_file, directory_to_process=directory_to_process, target=src_file, target_dir=target_dir2)

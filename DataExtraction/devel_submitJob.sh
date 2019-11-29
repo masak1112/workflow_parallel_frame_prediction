@@ -6,12 +6,13 @@
 #SBATCH --cpus-per-task=2
 #SBATCH --output=pystager-out.%j
 #SBATCH --error=pystager-err.%j
-#SBATCH --time=20:00:00
-#SBATCH --partition=batch
+#SBATCH --time=00:20:00
+#SBATCH --partition=devel
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=b.gong@fz-juelich.de
-
 jutil env activate -p deepacf
+
+
 module --force purge 
 module /usr/local/software/jureca/OtherStages
 module load Stages/2019a

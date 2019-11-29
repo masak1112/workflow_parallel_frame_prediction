@@ -1,6 +1,6 @@
 
 #!/bin/bash
-EXTRACT_PATH="./DataExtraction/Stager_devel_N_24_Bing.sh"
+EXTRACT_PATH="./DataExtraction/submitJob.sh"
 PREPROCESS_PATH="./DataPreprocess/Stager_devel_N_24_process_netCDF.sh"
 TRAINING_PATH="./Training/horovodJob.sh"
 POSPROCESS_PATH = "./DataPostprocess/Stager_devel_N_24_evaluation.sh"

@@ -4,11 +4,11 @@ import os
 # 0:deactivate 1: active
 
 Pleas fill the following parameters list for PyStager
-Source_Directory =  /p/fastdata/slmet/slmet111/met_data/ecmwf/era5/nc/2017/
-Destination_Directory = /p/scratch/cjjsc42/bing/PredNet/extractedData_test1
-Log_Directory = /p/project/cjjsc42/bing/pystager-development/DataExtraction/test1/log
+Source_Directory =  /p/fastdata/slmet/slmet111/met_data/ecmwf/era5/nc/2017/01/
+Destination_Directory = /p/scratch/cjjsc42/bing/PredNet/extractedData_test1_v1/
+Log_Directory = /p/project/cjjsc42/bing/pystager-development_v1/DataExtraction/benchmark/log
 Rsync_Status = 1
 Checksum_Status = 0
-
+Load_Level = 1
 
 
