@@ -1,9 +1,9 @@
 #!/bin/bash -x
 #SBATCH --account=deepacf
 #SBATCH --nodes=1
-#SBATCH --ntasks=2
-##SBATCH --ntasks-per-node=2
-#SBATCH --cpus-per-task=2
+#SBATCH --ntasks=8
+##SBATCH --ntasks-per-node=8
+##SBATCH --cpus-per-task1
 #SBATCH --output=pystager-out.%j
 #SBATCH --error=pystager-err.%j
 #SBATCH --time=20:00:00
