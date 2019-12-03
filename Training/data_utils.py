@@ -26,6 +26,7 @@ class SequenceGenerator(Iterator):
         if self.data_format == 'channels_first':
             self.X = np.transpose(self.X, (0, 3, 1, 2))
         self.im_shape = self.X[0].shape
+
         if self.sequence_start_mode == 'all':  # allow for any possible sequence, starting from any frame
             #bing
             #self.possible_starts = np.array([i for i in range(self.X.shape[0] - self.nt) if self.sources[i] == self.sources[i + self.nt - 1]])
