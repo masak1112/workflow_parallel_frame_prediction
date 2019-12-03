@@ -6,7 +6,10 @@ import os
 import numpy as np
 np.random.seed(123)
 #from six.moves import cPickle
+import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 
+#os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 from keras import backend as K
 from keras.models import Model
 from keras.layers import Input, Dense, Flatten
@@ -31,10 +34,10 @@ val_file = os.path.join(DATA_DIR, 'X_val.hkl')
 val_sources = os.path.join(DATA_DIR, 'sources_val.hkl')
 
 # Training parameters
-nb_epoch = 50 #original: 150; for all tests so far set to 100; t2onlyMax: 150
-batch_size = 15
+nb_epoch = 5 ## Bing: for hackthon testing, original is 50  #original: 150; for all tests so far set to 100; t2onlyMax: 150
+batch_size = 5 ##Bing original is 15, change 5 for test
 samples_per_epoch = 500 #original: 500; for all tests so far set to 300; t2onlyMax: 500
-N_seq_val = 80  # number of sequences to use for validation ##original: 100; for all tests so far set to 65; t2onlyMax: 80
+N_seq_val = 80 #Bing original is 80, change to 8  # number of sequences to use for validation ##original: 100; for all tests so far set to 65; t2onlyMax: 80
 
 # Model parameters
 n_channels, im_height, im_width = (3, 128, 160) 
@@ -49,6 +52,7 @@ layer_loss_weights = np.expand_dims(layer_loss_weights, 1)
 nt = 10  # number of timesteps used for sequences in training
 time_loss_weights = 1./ (nt - 1) * np.ones((nt,1))  # equally weight all timesteps except the first
 time_loss_weights[0] = 0
+
 
 prednet = PredNet(stack_sizes, R_stack_sizes,
 			  A_filt_sizes, Ahat_filt_sizes, R_filt_sizes,
@@ -72,13 +76,13 @@ if save_model:
 
 #the start training time
 a = datetime.datetime.now()
-history = model.fit_generator(train_generator, samples_per_epoch/batch_size, nb_epoch, callbacks=callbacks,
+#Bing: replace samples_per_epoch/batch_size to 10 for hackthon testing
+history = model.fit_generator(train_generator, 10, nb_epoch, callbacks=callbacks,
                 validation_data=val_generator, validation_steps=N_seq_val/batch_size)
 b = datetime.datetime.now()
 
 #the training time
 t = b-a
-
 
 stats = list(train_generator.X.shape)
 stats.append(t)
@@ -89,3 +93,4 @@ if save_model:
     json_string = model.to_json()
     with open(json_file, "w") as f:
         f.write(json_string)
+
